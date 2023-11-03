@@ -1,0 +1,1291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+
+    <!--==================== navigation bar =======================-->
+    <header class="header">
+        <span class="logo"><i class="fas fa-utensils"></i> Food Zone</span>
+
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#popular">Popular</a>
+            <a href="#blogs">Blogs</a>
+            <a href="#more">More</a>
+        </nav>
+
+        <div class="icons-box">
+            <div id="social" class="icon fab fa-facebook-f"></div>
+            <div id="social" class="icon fab fa-instagram"></div>
+            <div id="social" class="icon fab fa-x-twitter"></div>
+            <div id="menu-btn" class="icon fas fa-bars"></div>
+            <div id="cart" class="icon fa-solid fa-cart-shopping "></div>
+        </div>
+        <div class="cart-box dis">
+            <div class="fooditem-container">
+                <div class="foodItems"></div>
+                <div class="total">
+                    <p>Total</p>
+                    <p>-</p>
+                    <p id="amount"><i class="fa-solid fa-indian-rupee-sign"></i> 0</p>
+                </div>
+                <div class="order-box">
+                    <button  id="order" class="btn">Order</button>
+                </div>
+            </div>    
+            <div class="success dis">
+                <div class="check">
+                    <i class="fa-regular fa-circle-check"></i>
+                    <p>Order placed</p>
+                </div>
+                <div class="order-img-container">
+                    <img src="Assets/restaurent icon.jpg" alt="" class="building">
+                    <img src="Assets/homeicon.jpg" alt="" class="building">
+                    <img src="Assets/serv1.png" alt="" class="ride">
+                </div>
+                <hr>
+            </div>
+         </div>
+    </header>
+
+
+
+
+    <!-- ===================home section============================ -->
+    <section class="home" id="home">
+        <div class="content">
+            <span>Welcome FoodZone</span>
+            <h3>Different spices for different tastes😋</h3>
+            <p>"Indulge your taste buds in a culinary journey at FoodZone, where flavors come to life. Savor exquisite dishes that will leave you craving for more!"</p>
+            <a href="#menu" class="btn">Order Now</a>
+        </div>
+
+        <div class="image">
+           <img src="Assets/homeMainImg.png" alt="" class="home-img">
+        </div>
+    </section>
+
+
+    <!--======================= About section================ -->
+    <section class="about" id="about">
+        <div class="image">
+            <img src="Assets/aboutMainImage.png" alt="">
+        </div>
+
+        <div class="content">
+            <span>Why choose us?</span>
+            <h3 class="title">What's make our food delicious</h3>
+            <p>"We take pride in our talented culinary team, who craft innovative and mouthwatering dishes that set us apart. Our commitment to excellence in food preparation and presentation is what makes us the best."</p>
+
+            <div class="icons-container">
+                <div class="icons">
+                    <img src="Assets/serv1.png" alt="">
+                    <h3>Fast Delivery</h3>
+                </div>
+                <div class="icons">
+                    <img src="Assets/serv2.jpg" alt="">
+                    <h3>Fresh Food</h3>
+                </div>
+                <div class="icons">
+                    <img src="Assets/serv3.jpg" alt="">
+                    <h3>Best Quality</h3>
+                </div>
+                <div class="icons">
+                    <img src="Assets/serv4.jpg" alt="">
+                    <h3>24/7 support</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ===========================Menu Section==================== -->
+    <section class="menu" id="menu">
+        <div class="heading">
+            <span>Our menu</span>
+            <h3>Our Top Dishes</h3>
+
+        <!-- ==========food-options=========== -->
+        <div class="select-food-type">
+
+             <span class="option-box" id="snacks">
+                <img src="Assets/option1.png" alt="">
+                <h6>Snacks</h6>
+             </span>
+             <span class="option-box" id="soup">
+                <img src="Assets/option2.png" alt="">
+                <h6>Soup</h6>
+             </span>
+             <span class="option-box" id="curry">
+                <img src="Assets/option3.png" alt="">
+                <h6>Curry</h6>
+             </span>
+             <span class="option-box" id="bread">
+                <img src="Assets/option4.png" alt="">
+                <h6>Bread</h6>
+             </span>
+             <span class="option-box" id="rice">
+                <img src="Assets/option5.png" alt="">
+                <h6>Rice</h6>
+             </span>
+             <span class="option-box" id="desert">
+                <img src="Assets/option6.png" alt="">
+                <h6>Desert</h6>
+             </span>
+             <span class="option-box" id="juice">
+                <img src="Assets/option7.png" alt="">
+                <h6>Juice</h6>
+             </span>
+
+        </div>
+        <!-- food -->
+        <div class="snacks ">
+            <h3>Snacks</h3>
+            <div class="box-container">
+
+                <div class="box">
+                    <img src="Assets/s1.png" alt="">           
+                    <div class="content">
+                        <h3>french fries</h3>
+                        <div class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 99.00 </div>
+                        <div class="control-box">
+                            <div class="quantity">
+                                <i id="remove" class="fa-solid fa-minus"></i>
+                                <p>1</p>
+                                <i id="add" class="fa-solid fa-plus"></i>
+                            </div>
+                            <div>
+                                <button class="add-to-cart">add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="Assets/s2.png" alt="">           
+                    <div class="content">
+                        <h3>paneer tikka</h3>
+                        <div class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 159.00 </div>
+                        <div class="control-box">
+                            <div class="quantity">
+                                <i id="remove" class="fa-solid fa-minus"></i>
+                                <p>1</p>
+                                <i id="add" class="fa-solid fa-plus"></i>
+                            </div>
+                            <div>
+                                <button class="add-to-cart">add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="Assets/s3.png" alt="">           
+                    <div class="content">
+                        <h3>onion rings</h3>
+                        <div class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 99.00 </div>
+                        <div class="control-box">
+                            <div class="quantity">
+                                <i id="remove" class="fa-solid fa-minus"></i>
+                                <p>1</p>
+                                <i id="add" class="fa-solid fa-plus"></i>
+                            </div>
+                            <div>
+                                <button class="add-to-cart">add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="Assets/s4.png" alt="">           
+                    <div class="content">
+                        <h3>vadapav</h3>
+                        <div class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 20.00 </div>
+                        <div class="control-box">
+                            <div class="quantity">
+                                <i id="remove" class="fa-solid fa-minus"></i>
+                                <p>1</p>
+                                <i id="add" class="fa-solid fa-plus"></i>
+                            </div>
+                            <div>
+                                <button class="add-to-cart">add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="Assets/s5.png" alt="">           
+                    <div class="content">
+                        <h3>papad</h3>
+                        <div class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 20.00 </div>
+                        <div class="control-box">
+                            <div class="quantity">
+                                <i id="remove" class="fa-solid fa-minus"></i>
+                                <p>1</p>
+                                <i id="add" class="fa-solid fa-plus"></i>
+                            </div>
+                            <div>
+                                <button class="add-to-cart">add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="Assets/s6.png" alt="">           
+                    <div class="content">
+                        <h3>gobi manchuri</h3>
+                        <div class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 69.00 </div>
+                        <div class="control-box">
+                            <div class="quantity">
+                                <i id="remove" class="fa-solid fa-minus"></i>
+                                <p>1</p>
+                                <i id="add" class="fa-solid fa-plus"></i>
+                            </div>
+                            <div>
+                                <button class="add-to-cart">add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="Assets/s7.png" alt="">           
+                    <div class="content">
+                        <h3>samosa</h3>
+                        <div class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 30.00 </div>
+                        <div class="control-box">
+                            <div class="quantity">
+                                <i id="remove" class="fa-solid fa-minus"></i>
+                                <p>1</p>
+                                <i id="add" class="fa-solid fa-plus"></i>
+                            </div>
+                            <div>
+                                <button class="add-to-cart">add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="soup dis">
+            <h3>Soup</h3>
+            <div class="box-container">
+
+                <div class="box">
+                    <img src="Assets/su1.png" alt="">           
+                    <div class="content">
+                        <h3>tomato soup</h3>
+                        <div class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 70.00 </div>
+                        <div class="control-box">
+                            <div class="quantity">
+                                <i id="remove" class="fa-solid fa-minus"></i>
+                                <p>1</p>
+                                <i id="add" class="fa-solid fa-plus"></i>
+                            </div>
+                            <div>
+                                <button class="add-to-cart">add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="Assets/su2.png" alt="">           
+                    <div class="content">
+                        <h3>corn soup</h3>
+                        <div class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 70.00 </div>
+                        <div class="control-box">
+                            <div class="quantity">
+                                <i id="remove" class="fa-solid fa-minus"></i>
+                                <p>1</p>
+                                <i id="add" class="fa-solid fa-plus"></i>
+                            </div>
+                            <div>
+                                <button class="add-to-cart">add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="Assets/su3.png" alt="">           
+                    <div class="content">
+                        <h3>manchow soup</h3>
+                        <div class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 70.00 </div>
+                        <div class="control-box">
+                            <div class="quantity">
+                                <i id="remove" class="fa-solid fa-minus"></i>
+                                <p>1</p>
+                                <i id="add" class="fa-solid fa-plus"></i>
+                            </div>
+                            <div>
+                                <button class="add-to-cart">add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="curry dis">
+            <h3>Curry</h3>
+            <div class="box-container">
+
+                <div class="box">
+                    <img src="Assets/c1.png" alt="">           
+                    <div class="content">
+                        <h3>paneer butter masala </h3>
+                        <div class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 149.00 </div>
+                        <div class="control-box">
+                            <div class="quantity">
+                                <i id="remove" class="fa-solid fa-minus"></i>
+                                <p>1</p>
+                                <i id="add" class="fa-solid fa-plus"></i>
+                            </div>
+                            <div>
+                                <button class="add-to-cart">add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="Assets/c2.png" alt="">           
+                    <div class="content">
+                        <h3>kaju korma</h3>
+                        <div class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 149.00 </div>
+                        <div class="control-box">
+                            <div class="quantity">
+                                <i id="remove" class="fa-solid fa-minus"></i>
+                                <p>1</p>
+                                <i id="add" class="fa-solid fa-plus"></i>
+                            </div>
+                            <div>
+                                <button class="add-to-cart">add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="Assets/c3.png" alt="">           
+                    <div class="content">
+                        <h3>butter chicken</h3>
+                        <div class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 199.00 </div>
+                        <div class="control-box">
+                            <div class="quantity">
+                                <i id="remove" class="fa-solid fa-minus"></i>
+                                <p>1</p>
+                                <i id="add" class="fa-solid fa-plus"></i>
+                            </div>
+                            <div>
+                                <button class="add-to-cart">add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="Assets/c4.png" alt="">           
+                    <div class="content">
+                        <h3>mix veg</h3>
+                        <div class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 119.00 </div>
+                        <div class="control-box">
+                            <div class="quantity">
+                                <i id="remove" class="fa-solid fa-minus"></i>
+                                <p>1</p>
+                                <i id="add" class="fa-solid fa-plus"></i>
+                            </div>
+                            <div>
+                                <button class="add-to-cart">add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="Assets/c5.png" alt="">           
+                    <div class="content">
+                        <h3>mutter paneer</h3>
+                        <div class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 149.00 </div>
+                        <div class="control-box">
+                            <div class="quantity">
+                                <i id="remove" class="fa-solid fa-minus"></i>
+                                <p>1</p>
+                                <i id="add" class="fa-solid fa-plus"></i>
+                            </div>
+                            <div>
+                                <button class="add-to-cart">add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="Assets/c6.png" alt="">           
+                    <div class="content">
+                        <h3>aloo gobi</h3>
+                        <div class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 119.00 </div>
+                        <div class="control-box">
+                            <div class="quantity">
+                                <i id="remove" class="fa-solid fa-minus"></i>
+                                <p>1</p>
+                                <i id="add" class="fa-solid fa-plus"></i>
+                            </div>
+                            <div>
+                                <button class="add-to-cart">add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="Assets/c7.png" alt="">           
+                    <div class="content">
+                        <h3>mutton curry</h3>
+                        <div class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 259.00 </div>
+                        <div class="control-box">
+                            <div class="quantity">
+                                <i id="remove" class="fa-solid fa-minus"></i>
+                                <p>1</p>
+                                <i id="add" class="fa-solid fa-plus"></i>
+                            </div>
+                            <div>
+                                <button class="add-to-cart">add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="Assets/c8.png" alt="">           
+                    <div class="content">
+                        <h3>dal fry</h3>
+                        <div class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 119.00 </div>
+                        <div class="control-box">
+                            <div class="quantity">
+                                <i id="remove" class="fa-solid fa-minus"></i>
+                                <p>1</p>
+                                <i id="add" class="fa-solid fa-plus"></i>
+                            </div>
+                            <div>
+                                <button class="add-to-cart">add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="bread dis">
+            <h3>bread</h3>
+            <div class="box-container">
+
+                <div class="box">
+                    <img src="Assets/b1.png" alt="">           
+                    <div class="content">
+                        <h3>tandoori roti</h3>
+                        <div class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 15.00 </div>
+                        <div class="control-box">
+                            <div class="quantity">
+                                <i id="remove" class="fa-solid fa-minus"></i>
+                                <p>1</p>
+                                <i id="add" class="fa-solid fa-plus"></i>
+                            </div>
+                            <div>
+                                <button class="add-to-cart">add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="Assets/b2.png" alt="">           
+                    <div class="content">
+                        <h3>garlic naan</h3>
+                        <div class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 29.00 </div>
+                        <div class="control-box">
+                            <div class="quantity">
+                                <i id="remove" class="fa-solid fa-minus"></i>
+                                <p>1</p>
+                                <i id="add" class="fa-solid fa-plus"></i>
+                            </div>
+                            <div>
+                                <button class="add-to-cart">add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="Assets/b3.png" alt="">           
+                    <div class="content">
+                        <h3>aloo paratha</h3>
+                        <div class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 49.00 </div>
+                        <div class="control-box">
+                            <div class="quantity">
+                                <i id="remove" class="fa-solid fa-minus"></i>
+                                <p>1</p>
+                                <i id="add" class="fa-solid fa-plus"></i>
+                            </div>
+                            <div>
+                                <button class="add-to-cart">add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="Assets/b4.png" alt="">           
+                    <div class="content">
+                        <h3>phulka</h3>
+                        <div class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 19.00 </div>
+                        <div class="control-box">
+                            <div class="quantity">
+                                <i id="remove" class="fa-solid fa-minus"></i>
+                                <p>1</p>
+                                <i id="add" class="fa-solid fa-plus"></i>
+                            </div>
+                            <div>
+                                <button class="add-to-cart">add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="Assets/b5.png" alt="">           
+                    <div class="content">
+                        <h3>rumali roti</h3>
+                        <div class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 19.00 </div>
+                        <div class="control-box">
+                            <div class="quantity">
+                                <i id="remove" class="fa-solid fa-minus"></i>
+                                <p>1</p>
+                                <i id="add" class="fa-solid fa-plus"></i>
+                            </div>
+                            <div>
+                                <button class="add-to-cart">add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="Assets/b6.png" alt="">           
+                    <div class="content">
+                        <h3>kulcha</h3>
+                        <div class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 19.00 </div>
+                        <div class="control-box">
+                            <div class="quantity">
+                                <i id="remove" class="fa-solid fa-minus"></i>
+                                <p>1</p>
+                                <i id="add" class="fa-solid fa-plus"></i>
+                            </div>
+                            <div>
+                                <button class="add-to-cart">add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="rice dis">
+            <h3>Rice</h3>
+            <div class="box-container">
+
+                <div class="box">
+                    <img src="Assets/r1.png" alt="">           
+                    <div class="content">
+                        <h3>jeera rice</h3>
+                        <div class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 99.00 </div>
+                        <div class="control-box">
+                            <div class="quantity">
+                                <i id="remove" class="fa-solid fa-minus"></i>
+                                <p>1</p>
+                                <i id="add" class="fa-solid fa-plus"></i>
+                            </div>
+                            <div>
+                                <button class="add-to-cart">add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="Assets/r2.png" alt="">           
+                    <div class="content">
+                        <h3>masala rice</h3>
+                        <div class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 99.00 </div>
+                        <div class="control-box">
+                            <div class="quantity">
+                                <i id="remove" class="fa-solid fa-minus"></i>
+                                <p>1</p>
+                                <i id="add" class="fa-solid fa-plus"></i>
+                            </div>
+                            <div>
+                                <button class="add-to-cart">add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="Assets/r3.png" alt="">           
+                    <div class="content">
+                        <h3>kaju rice</h3>
+                        <div class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 129.00 </div>
+                        <div class="control-box">
+                            <div class="quantity">
+                                <i id="remove" class="fa-solid fa-minus"></i>
+                                <p>1</p>
+                                <i id="add" class="fa-solid fa-plus"></i>
+                            </div>
+                            <div>
+                                <button class="add-to-cart">add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="Assets/r4.png" alt="">           
+                    <div class="content">
+                        <h3>chicken biryani</h3>
+                        <div class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 149.00 </div>
+                        <div class="control-box">
+                            <div class="quantity">
+                                <i id="remove" class="fa-solid fa-minus"></i>
+                                <p>1</p>
+                                <i id="add" class="fa-solid fa-plus"></i>
+                            </div>
+                            <div>
+                                <button class="add-to-cart">add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="Assets/r5.png" alt="">           
+                    <div class="content">
+                        <h3>mutton biryani</h3>
+                        <div class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 199.00 </div>
+                        <div class="control-box">
+                            <div class="quantity">
+                                <i id="remove" class="fa-solid fa-minus"></i>
+                                <p>1</p>
+                                <i id="add" class="fa-solid fa-plus"></i>
+                            </div>
+                            <div>
+                                <button class="add-to-cart">add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="Assets/r6.png" alt="">           
+                    <div class="content">
+                        <h3>dal khichidi</h3>
+                        <div class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 99.00 </div>
+                        <div class="control-box">
+                            <div class="quantity">
+                                <i id="remove" class="fa-solid fa-minus"></i>
+                                <p>1</p>
+                                <i id="add" class="fa-solid fa-plus"></i>
+                            </div>
+                            <div>
+                                <button class="add-to-cart">add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="Assets/r7.png" alt="">           
+                    <div class="content">
+                        <h3>curd rice</h3>
+                        <div class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 99.00 </div>
+                        <div class="control-box">
+                            <div class="quantity">
+                                <i id="remove" class="fa-solid fa-minus"></i>
+                                <p>1</p>
+                                <i id="add" class="fa-solid fa-plus"></i>
+                            </div>
+                            <div>
+                                <button class="add-to-cart">add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="Assets/r8.png" alt="">           
+                    <div class="content">
+                        <h3>pulav</h3>
+                        <div class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 119.00 </div>
+                        <div class="control-box">
+                            <div class="quantity">
+                                <i id="remove" class="fa-solid fa-minus"></i>
+                                <p>1</p>
+                                <i id="add" class="fa-solid fa-plus"></i>
+                            </div>
+                            <div>
+                                <button class="add-to-cart">add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="desert dis">
+            <h3>Deserts</h3>
+            <div class="box-container">
+
+                <div class="box">
+                    <img src="Assets/d1.png" alt="">           
+                    <div class="content">
+                        <h3>gulab jamun</h3>
+                        <div class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 49.00 </div>
+                        <div class="control-box">
+                            <div class="quantity">
+                                <i id="remove" class="fa-solid fa-minus"></i>
+                                <p>1</p>
+                                <i id="add" class="fa-solid fa-plus"></i>
+                            </div>
+                            <div>
+                                <button class="add-to-cart">add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="Assets/d2.png" alt="">           
+                    <div class="content">
+                        <h3>icecream</h3>
+                        <div class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 35.00 </div>
+                        <div class="control-box">
+                            <div class="quantity">
+                                <i id="remove" class="fa-solid fa-minus"></i>
+                                <p>1</p>
+                                <i id="add" class="fa-solid fa-plus"></i>
+                            </div>
+                            <div>
+                                <button class="add-to-cart">add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="Assets/d3.png" alt="">           
+                    <div class="content">
+                        <h3>gajar ka halwa</h3>
+                        <div class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 49.00 </div>
+                        <div class="control-box">
+                            <div class="quantity">
+                                <i id="remove" class="fa-solid fa-minus"></i>
+                                <p>1</p>
+                                <i id="add" class="fa-solid fa-plus"></i>
+                            </div>
+                            <div>
+                                <button class="add-to-cart">add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="Assets/d4.png" alt="">           
+                    <div class="content">
+                        <h3>kheer</h3>
+                        <div class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 35.00 </div>
+                        <div class="control-box">
+                            <div class="quantity">
+                                <i id="remove" class="fa-solid fa-minus"></i>
+                                <p>1</p>
+                                <i id="add" class="fa-solid fa-plus"></i>
+                            </div>
+                            <div>
+                                <button class="add-to-cart">add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="juice dis">
+            <h3>Juice</h3>
+            <div class="box-container">
+
+                <div class="box">
+                    <img src="Assets/j1.png" alt="">           
+                    <div class="content">
+                        <h3>lassi</h3>
+                        <div class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 49.00 </div>
+                        <div class="control-box">
+                            <div class="quantity">
+                                <i id="remove" class="fa-solid fa-minus"></i>
+                                <p>1</p>
+                                <i id="add" class="fa-solid fa-plus"></i>
+                            </div>
+                            <div>
+                                <button class="add-to-cart">add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="Assets/j2.png" alt="">           
+                    <div class="content">
+                        <h3>chass</h3>
+                        <div class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 35.00 </div>
+                        <div class="control-box">
+                            <div class="quantity">
+                                <i id="remove" class="fa-solid fa-minus"></i>
+                                <p>1</p>
+                                <i id="add" class="fa-solid fa-plus"></i>
+                            </div>
+                            <div>
+                                <button class="add-to-cart">add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="Assets/j3.png" alt="">           
+                    <div class="content">
+                        <h3>lemon juice</h3>
+                        <div class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 29.00 </div>
+                        <div class="control-box">
+                            <div class="quantity">
+                                <i id="remove" class="fa-solid fa-minus"></i>
+                                <p>1</p>
+                                <i id="add" class="fa-solid fa-plus"></i>
+                            </div>
+                            <div>
+                                <button class="add-to-cart">add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================popular products=========================== -->
+    <section class="popular" id="popular">
+        <div class="heading">
+            <span>Popular Food</span>
+            <h3>Our special Dishes</h3>
+        </div>
+
+        <div class="box-container">
+
+
+            <div class="box">
+                <div class="image">
+                    <img src="Assets/popular1.jpg" alt="">
+                </div>
+                    
+                
+                <div class="content">
+                    <h3>veg thali</h3>
+
+
+                    <div class="price">699.00 Rs <span>799.00 Rs</span></div>
+                    <div class="control-box">
+                    <i class="fas fa-heart heart"></i>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>(50)</span>
+
+                    </div>
+                        <div class="quantity">
+                            <i id="remove" class="fa-solid fa-minus"></i>
+                            <p>1</p>
+                            <i id="add" class="fa-solid fa-plus"></i>
+                        </div>
+                        <div>
+                            <button class="add-to-cart">add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="Assets/popular2.jpg" alt="">
+                </div>
+                    
+                
+                <div class="content">
+                    <h3>chicken biryani</h3>
+
+
+                    <div class="price">149.00 Rs <span>199.00 Rs</span></div>
+                    <div class="control-box">
+                    <i class="fas fa-heart heart"></i>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>(50)</span>
+
+                    </div>
+                        <div class="quantity">
+                            <i id="remove" class="fa-solid fa-minus"></i>
+                            <p>1</p>
+                            <i id="add" class="fa-solid fa-plus"></i>
+                        </div>
+                        <div>
+                            <button class="add-to-cart">add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="Assets/popular3.jpg" alt="">
+                </div>
+                    
+                
+                <div class="content">
+                    <h3>malai kofta</h3>
+
+
+                    <div class="price">229.00 Rs <span>299.00 Rs</span></div>
+                    <div class="control-box">
+                    <i class="fas fa-heart heart"></i>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>(50)</span>
+
+                    </div>
+                        <div class="quantity">
+                            <i id="remove" class="fa-solid fa-minus"></i>
+                            <p>1</p>
+                            <i id="add" class="fa-solid fa-plus"></i>
+                        </div>
+                        <div>
+                            <button class="add-to-cart">add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="Assets/popular4.jpg" alt="">
+                </div>
+                    
+                
+                <div class="content">
+                    <h3>dal makhani</h3>
+
+
+                    <div class="price">229.00 Rs <span>299.00 Rs</span></div>
+                    <div class="control-box">
+                    <i class="fas fa-heart heart"></i>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>(50)</span>
+
+                    </div>
+                        <div class="quantity">
+                            <i id="remove" class="fa-solid fa-minus"></i>
+                            <p>1</p>
+                            <i id="add" class="fa-solid fa-plus"></i>
+                        </div>
+                        <div>
+                            <button class="add-to-cart">add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="Assets/popular5.jpg" alt="">
+                </div>
+                    
+                
+                <div class="content">
+                    <h3>grilled chicken</h3>
+
+
+                    <div class="price">599.00 Rs <span>699.00 Rs</span></div>
+                    <div class="control-box">
+                    <i class="fas fa-heart heart"></i>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>(50)</span>
+
+                    </div>
+                        <div class="quantity">
+                            <i id="remove" class="fa-solid fa-minus"></i>
+                            <p>1</p>
+                            <i id="add" class="fa-solid fa-plus"></i>
+                        </div>
+                        <div>
+                            <button class="add-to-cart">add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="Assets/popular6.jpg" alt="">
+                </div>
+                    
+                
+                <div class="content">
+                    <h3>chole bhature </h3>
+
+
+                    <div class="price">99.00 Rs <span>159.00 Rs</span></div>
+                    <div class="control-box">
+                    <i class="fas fa-heart heart"></i>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>(50)</span>
+
+                    </div>
+                        <div class="quantity">
+                            <i id="remove" class="fa-solid fa-minus"></i>
+                            <p>1</p>
+                            <i id="add" class="fa-solid fa-plus"></i>
+                        </div>
+                        <div>
+                            <button class="add-to-cart">add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="Assets/popular7.jpg" alt="">
+                </div>
+                    
+                
+                <div class="content">
+                    <h3>ragi mudde & sambar</h3>
+
+
+                    <div class="price">159.00 Rs <span>199.00 Rs</span></div>
+                    <div class="control-box">
+                    <i class="fas fa-heart heart"></i>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>(50)</span>
+
+                    </div>
+                        <div class="quantity">
+                            <i id="remove" class="fa-solid fa-minus"></i>
+                            <p>1</p>
+                            <i id="add" class="fa-solid fa-plus"></i>
+                        </div>
+                        <div>
+                            <button class="add-to-cart">add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="Assets/popular8.jpg" alt="">
+                </div>
+                    
+                
+                <div class="content">
+                    <h3>pav bhaji</h3>
+
+
+                    <div class="price">99.00 Rs <span>159.00 Rs</span></div>
+                    <div class="control-box">
+                    <i class="fas fa-heart heart"></i>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>(50)</span>
+
+                    </div>
+                        <div class="quantity">
+                            <i id="remove" class="fa-solid fa-minus"></i>
+                            <p>1</p>
+                            <i id="add" class="fa-solid fa-plus"></i>
+                        </div>
+                        <div>
+                            <button class="add-to-cart">add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <!-- ==================================Blog post================================ -->
+    <section class="blogs" id="blogs">
+        <div class="heading">
+            <span>Our Blogs</span>
+            <h3>Our Daily Stories</h3>
+        </div>
+
+        <div class="box-container">
+
+
+            <div class="box">
+                <div class="image">
+                    <h3><i class="fa-solid fa-calendar-days"></i>21st may,2023</h3>
+                    <img src="Assets/blog1.jpg" alt="">
+                </div>
+                <div class="content">
+                    <div class="tags">
+                        <span><i class="fas fa-tag"></i> food /</span>
+                        <span><i class="fas fa-tag"></i> taste /</span>
+                        <span><i class="fas fa-tag"></i> snacks /</span>
+                    </div>
+                    <h3>Savoring the Flavors of Food Zone Restaurant's Irresistible Pav Bhaji</h3>
+                    <p>If you're a fan of Indian street food and happen to find yourself in the vicinity of Food Zone Restaurant, you're in for a delightful culinary experience. This beloved eatery is known for its mouthwatering pav bhaji, a quintessential Mumbai street food that has won the hearts of food enthusiasts around the world.</p>
+                    <div class="extra dis">
+                        <p>The secret to the delectable pav bhaji at Food Zone lies in its rich, flavorful tomato-based gravy, loaded with a variety of finely chopped and mashed vegetables. The blend of tomatoes, onions, green peppers, peas, and a dash of special spices creates a harmonious symphony of tastes. The dish is generously cooked with butter, making it irresistibly creamy and satisfying.</p>
+                    </div>
+                    <button class="read-more btn">Read more..</button>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <h3><i class="fa-solid fa-calendar-days"></i>21st may,2023</h3>
+                    <img src="Assets/blog2.jpg" alt="">
+                </div>
+                <div class="content">
+                    <div class="tags">
+                        <span><i class="fas fa-tag"></i> food /</span>
+                        <span><i class="fas fa-tag"></i> taste /</span>
+                        <span><i class="fas fa-tag"></i> snacks /</span>
+                    </div>
+                    <h3>Food Zone's Paneer Butter Masala: A Taste of India's Finest</h3>
+                    <p>Food Zone Restaurant, a culinary gem known for its exquisite Indian cuisine, has another savory masterpiece that will have you coming back for more - their delectable Paneer Butter Masala. If you're a lover of Indian food, this dish is a must-try, and Food Zone's version takes it to another level.</p>
+                    <div class="extra dis">
+                        <p>The heart of Paneer Butter Masala is the paneer, a fresh and creamy Indian cheese that's cubed and cooked in a velvety tomato-based gravy. What sets Food Zone apart is their commitment to using the freshest and finest ingredients. The paneer in their Paneer Butter Masala is always soft and succulent, melting in your mouth with each bite.</p>
+                    </div>
+                    <button class="read-more btn">Read more..</button>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <h3><i class="fa-solid fa-calendar-days"></i>21st may,2023</h3>
+                    <img src="Assets/blog3.jpg" alt="">
+                </div>
+                <div class="content">
+                    <div class="tags">
+                        <span><i class="fas fa-tag"></i> food /</span>
+                        <span><i class="fas fa-tag"></i> taste /</span>
+                        <span><i class="fas fa-tag"></i> snacks /</span>
+                    </div>
+                    <h3>Satisfy Your Cravings with Food Zone Restaurant's Flavorful Samosas</h3>
+                    <p>When it comes to indulging in delectable Indian snacks, look no further than Food Zone Restaurant. Nestled within their extensive menu is the beloved classic, the samosa a timeless Indian snack. These crispy triangles of delight have earned a special place in the hearts of all who visit this culinary haven</p>
+                    <div class="extra dis">
+                        <p> if you're in search of authentic and mouthwatering samosas that truly capture the essence of Indian street food, Food Zone Restaurant is the place to be. With their unwavering dedication to quality ingredients and time-honored recipes, each samosa is a culinary masterpiece. Don't miss the chance to relish this iconic Indian snack at Food Zone – it's a temptation that will keep you coming back for more! </p>
+                    </div>
+                    <button class="read-more btn">Read more..</button>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- ============================more section========================== -->
+    <section class="more" id="more">
+        <div class="heading">
+            <span>Order Now</span>
+            <h3>Fast Home Delivery</h3>
+        </div>
+
+        <div class="icons-container">
+
+            <div class="icons">
+                <img src="Assets/icon1.png" alt="">
+                <h3>7:00am to 10:30pm</h3>
+            </div>
+            <div class="icons">
+                <img src="Assets/icon2.png" alt="">
+                <h3>+91 9876543210</h3>
+            </div>  <div class="icons">
+                <img src="Assets/icon3.png" alt="">
+                <h3>Humnabad</h3>
+            </div>
+
+
+        </div>
+        <div class="footer" id="footer">
+
+            <div class="box-container">
+    
+                <div class="box">
+                    <h3>Social Media</h3>
+    
+                    <a href=""><i class="fa-brands fa-facebook"></i>FoodZone</a>
+                    <a href=""><i class="fa-brands fa-instagram"></i>FoodZone</a>
+                    <a href=""><i class="fa-brands fa-x-twitter"></i>FoodZone</a>
+                </div>
+    
+                <div class="box">
+                    <h3>Quick Link</h3>
+    
+                    <a href="#home"><i class="fas fa-arrow-right"></i>Home</a>
+                    <a href="#about"><i class="fas fa-arrow-right"></i>About</a>
+                    <a href="#popular"><i class="fas fa-arrow-right"></i>Popular</a>
+                    <a href="#menu"><i class="fas fa-arrow-right"></i>Menu</a>
+                    <a href="#blogs"><i class="fas fa-arrow-right"></i>Blog</a>
+                </div>
+    
+                <div class="box">
+                    <h3>Opening Hours</h3>
+    
+                    <p>monday : 7:00am to 10:00pm</p>
+                    <p>tuesday : 7:00am to 10:00pm</p>
+                    <p>wednesday : 7:00am to 10:00pm</p>
+                    <p>friday : 7:00am to 10:00pm</p>
+                    <p>thursday,saturday and sunday closed</p>
+                </div>
+    
+    
+            </div>
+            <div class="bottom">
+                <div class="credit"><span>Created By Vaibhav</span> | all rights resured</div>
+            </div>
+        </div>
+        
+    
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
